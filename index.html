@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>✧ Sailor Moon Corner ✧</title>
+    <style>
+        /* --- CORE STYLES --- */
+        body {
+            background-color: #ffdaeb;
+            /* Embedded Pink Pattern */
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20v40c11.046 0 20-8.954 20-20z' fill='%23ffffff' fill-opacity='0.2'/%3E%3C/svg%3E");
+            font-family: 'Tahoma', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px 10px;
+            margin: 0;
+        }
+
+        .window {
+            width: 850px;
+            background: #fff;
+            border: 6px solid #ffbfe0;
+            border-radius: 15px;
+            box-shadow: 12px 12px 0px #ffbfe0;
+            overflow: hidden;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .title-bar {
+            background: #ffbfe0;
+            color: white;
+            padding: 5px 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 10px;
+            background: linear-gradient(to bottom, #fff, #fff0f7);
+        }
+
+        .hero h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 70px;
+            color: #ff88c2;
+            margin: 0;
+            text-shadow: 3px 3px 0px #ffe0f0;
+        }
+
+        /* --- GRID --- */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .box {
+            background: #fff0f7;
+            border: 2px solid #ffcae5;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 12px;
+            overflow: hidden;
+        }
+
+        .box-title {
+            background: #ffcae5;
+            color: white;
+            margin: -12px -12px 10px -12px;
+            padding: 5px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* --- NAVIGATION --- */
+        .nav-link {
+            display: block;
+            background: white;
+            color: #ff88c2;
+            text-decoration: none;
+            padding: 8px;
+            margin: 6px 0;
+            border: 1px solid #ffcae5;
+            text-align: center;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover { background: #ffcae5; color: white; transform: scale(1.05); }
+
+        /* --- EMBEDDED GIF REPLACEMENT --- */
+        /* Since GIFs are huge, I've used a high-quality CSS animation and a reliable backup icon */
+        .gif-placeholder {
+            width: 100%;
+            height: 150px;
+            background: #ffcae5 url('https://api.iconify.design/line-md:loading-twotone-loop.svg?color=%23ffffff') no-repeat center;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .footer {
+            background: #ffbfe0;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        marquee { font-weight: bold; }
+
+        @media (max-width: 800px) { .main-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="window">
+    <div class="title-bar">
+        <span>✧ welcome to my corner ✧</span>
+        <span>[ _ ] [ □ ] [ X ]</span>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome user</h1>
+        <p>~ to my little corner on the web ~</p>
+    </div>
+
+    <div class="main-grid">
+        <div>
+            <div class="box">
+                <div class="box-title">navigation</div>
+                <a href="#home" class="nav-link">home</a>
+                <a href="#about" class="nav-link">about me</a>
+                <a href="#likes" class="nav-link">likes</a>
+                <a href="#updates" class="nav-link">updates</a>
+            </div>
+            <div class="box" style="text-align: center;">
+                <div class="box-title">now playing</div>
+                <div class="gif-placeholder">🌙</div>
+                <p style="font-size:10px;">Moonlight Densetsu</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="box" id="home">
+                <div class="box-title">hello there!</div>
+                <p style="font-size:13px;">Welcome! I share things I love and cute stuff that makes me happy! (~＾◡＾)♡</p>
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png" alt="Heart" width="100%" />
+            </div>
+            <div class="box" id="likes" style="text-align:center;">
+                <div class="box-header">some things i love</div>
+                <div style="font-size:30px; margin:10px 0;">🌸 🐱 🎀 🎮</div>
+                <p style="font-size:11px;">sailor moon • cats • pink • anime</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="box" id="about">
+                <div class="box-title">about me</div>
+                <div class="gif-placeholder">✨</div>
+                <p style="font-size:11px;">Just a girl who loves pretty things and anime!</p>
+            </div>
+            <div class="box" id="updates">
+                <div class="box-title">updates</div>
+                <p style="font-size:10px;">04/21: Site open!<br>04/20: Links fixed!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <marquee scrollamount="3">Sailor Moon OST - Moonlight Densetsu • Now Playing • Autoplay: On</marquee>
+    </div>
+</div>
+
+</body>
+</html>
